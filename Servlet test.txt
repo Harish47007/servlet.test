@@ -1,0 +1,85 @@
+Servlet Test 				Full Mark - 50
+1.Difference between Web Server and Application Server:
+
+Web Server: Handles HTTP requests and serves static content like HTML/CSS/JS.
+Application Server: Provides additional services like EJB, transaction management, and hosting dynamic web apps.
+2. Difference between GET and POST method:
+
+GET: Appends data to URL, used for idempotent requests.
+POST: Sends data in the request body, used for non-idempotent operations.
+3. MIME Type:
+A standard indicating the nature of a file or data, e.g., text/html, application/json.
+
+4. Web Application & Directory Structure:
+A web app is software running on a server, accessible via a browser.
+Structure:
+
+bash
+Copy code
+/WEB-INF  
+  /classes  
+  /lib  
+web.xml  
+5. Servlet:
+A Java class that handles HTTP requests and generates responses in a web application.
+
+6. Advantages of Servlet over CGI:
+
+Platform-independent, efficient (thread-based), and better integration with Java APIs.
+7. Common Tasks of Servlet Container:
+
+Request handling, lifecycle management, security, session tracking, and resource pooling.
+8. ServletConfig Object:
+An object for initialization parameters, specific to a single servlet.
+
+9. ServletContext Object:
+Provides web application-wide resources and initialization parameters.
+
+10. Request Dispatcher:
+An interface to forward or include responses between servlets.
+
+11. PrintWriter:
+A class used to write response data to the client.
+
+12. Calling One Servlet from Another:
+Use RequestDispatcher or send a redirect response.
+
+13. Invoking Another Servlet in Different Application:
+Use URL-based redirection.
+
+14. HttpServlet Class Abstract:
+Prevents direct instantiation; provides abstract methods for HTTP-specific implementations.
+
+15. Servlet Life Cycle Methods:
+
+init(), service(), destroy().
+16. Methods of Session Management:
+
+Cookies, URL rewriting, HTTPSession, and hidden form fields.
+17. URL Rewriting:
+Attaching session data as query parameters in URLs.
+
+18. Cookies in Servlets:
+Small data stored on the client for maintaining state, sent with HTTP requests.
+
+19. Notify Session Object on Timeout:
+Implement HttpSessionBindingListener or HttpSessionListener.
+
+20. Deployment Descriptor:
+The web.xml file containing servlet mappings, configurations, and initialization data.
+
+21. Get Actual Path of Servlet:
+Use ServletContext.getRealPath("/path").
+
+22. Get Server Information:
+Call ServletContext.getServerInfo().
+
+23. MVC:
+Model-View-Controller is a design pattern to separate business logic, UI, and control flow.
+
+24. Difference between doGet() and doPost():
+
+doGet(): Used for retrieving data.
+doPost(): Used for submitting data securely.
+25. Difference between Servlets and Regular Java Classes:
+Servlets are designed for web applications and integrate with the HTTP protocol, unlike regular classes.
